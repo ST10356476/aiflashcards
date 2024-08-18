@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Root Variables for Theming */
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* Global Body Styles */
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: 'Roboto', sans-serif; /* Ensure font consistency */
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Additional Custom Styles */
+a {
+  color: inherit; /* Inherit color from the parent */
+  text-decoration: none; /* Remove default underline */
+}
+
+button {
+  cursor: pointer; /* Ensure buttons are clickable */
+  outline: none; /* Remove default outline */
+}
+
+button:focus {
+  box-shadow: 0 0 0 2px rgba(0, 255, 255, 0.5); /* Custom focus outline */
+}

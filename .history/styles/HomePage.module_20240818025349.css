@@ -1,0 +1,51 @@
+/* Container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #4b0082, #000428); /* Deep purple to black gradient */
+  color: #fff;
+  padding: 2rem;
+}
+
+/* Heading styling */
+.heading {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background: linear-gradient(to right, #00ff99, #00aaff); /* Neon green to blue gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 20px rgba(0, 255, 153, 0.8), 0 0 30px rgba(0, 170, 255, 0.8); /* Neon glow effect */
+}
+
+/* Paragraph styling */
+.description {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 600px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Button styling */
+.button {
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #00aaff, #00ff99); /* Neon blue to green gradient */
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 30px rgba(0, 255, 153, 0.8); /* Neon glow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0, 170, 255, 1), 0 0 40px rgba(0, 255, 153, 1); /* Enhanced glow on hover */
+}

@@ -1,0 +1,94 @@
+/* styles/flashcards.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #111, #222);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00ffff; /* Neon cyan color */
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #cccccc;
+  }
+  
+  .flashcard {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .flashcard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
+  }
+  
+  .flashcard p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+  }
+  
+  .text-neonPink {
+    color: #ff66b2; /* Neon pink */
+  }
+  
+  .text-neonBlue {
+    color: #66b2ff; /* Neon blue */
+  }
+  
+  .button {
+    background: #00ffff;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .button:hover {
+    background: #00bcd4;
+    box-shadow: 0 0 15px #00bcd4;
+  }
+  
+  .signInButton {
+    background: #ff66b2;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ff66b2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .signInButton:hover {
+    background: #e63f77;
+    box-shadow: 0 0 15px #e63f77;
+  }
+  

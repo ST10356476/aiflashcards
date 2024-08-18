@@ -1,0 +1,46 @@
+/* styles/HomePage.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #00f;
+  text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f, 0 0 20px #00f;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 15px #0f0;
+}
+
+button {
+  background: linear-gradient(145deg, #1e90ff, #00bfff);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #00bfff, #1e90ff);
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+}

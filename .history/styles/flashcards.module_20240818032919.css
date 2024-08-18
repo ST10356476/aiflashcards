@@ -1,0 +1,72 @@
+/* styles/flashcards.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .flashcardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .flashcard {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .flashcard:hover {
+    transform: scale(1.05);
+  }
+  
+  .flashcardContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .question {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .answer {
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+  
+  .button,
+  .generateButton {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #0070f3;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover,
+  .generateButton:hover {
+    background-color: #005bb5;
+  }
+  

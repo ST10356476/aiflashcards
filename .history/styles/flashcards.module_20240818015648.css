@@ -1,0 +1,101 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #000000, #333333);
+    color: #ffffff;
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #00ff00; /* Neon Green */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .input {
+    width: 100%;
+    max-width: 40rem;
+    padding: 1rem;
+    border: 2px solid #00d4ff; /* Neon Blue */
+    border-radius: 0.5rem;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    placeholder-color: #999999;
+    outline: none;
+    box-shadow: 0 0 10px #00d4ff;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .input:focus {
+    box-shadow: 0 0 20px #00d4ff;
+  }
+  
+  .button {
+    padding: 1rem 2rem;
+    background-color: #00d4ff; /* Neon Blue */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+  }
+  
+  .button:hover {
+    background-color: #0099cc;
+    box-shadow: 0 0 20px #0099cc, 0 0 30px #0099cc;
+  }
+  
+  .flashcard {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 2px solid #a200ff; /* Neon Purple */
+    border-radius: 0.5rem;
+    background-color: #1a1a1a;
+    box-shadow: 0 0 10px #a200ff, 0 0 20px #a200ff;
+  }
+  
+  .flashcard h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #00ff00; /* Neon Green */
+  }
+  
+  .flashcard p {
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+  
+  .flashcard button {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: #ff0044; /* Neon Red */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #ff0044, 0 0 20px #ff0044;
+  }
+  
+  .flashcard button:hover {
+    background-color: #cc0033;
+    box-shadow: 0 0 20px #cc0033, 0 0 30px #cc0033;
+  }
+  

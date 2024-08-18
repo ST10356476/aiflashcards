@@ -1,0 +1,43 @@
+/* General container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  /* Heading styling */
+  .heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #00ff99; /* Neon green color */
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+  }
+  
+  /* SignIn component container styling */
+  .signinContainer {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Neon green shadow */
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Optional: Adding some responsiveness */
+  @media (max-width: 600px) {
+    .heading {
+      font-size: 2rem;
+    }
+  
+    .signinContainer {
+      padding: 1rem;
+    }
+  }
+  

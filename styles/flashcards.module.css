@@ -1,0 +1,162 @@
+/* styles/flashcards.module.css */
+
+/* Keyframes for gradient background animation */
+@keyframes gradientBackground {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+  /* Keyframes for bubble liquid background animation */
+  @keyframes bubbleAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+  }
+  
+  /* Container styling */
+  .container {
+    padding: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(45deg, #000428, #004e92);
+    color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+  }
+  
+  /* Animated bubbles */
+  .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    animation: bubbleAnimation 30s infinite;
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 4rem;
+    text-align: center;
+    color: #00ffcc;
+    text-shadow: 0 0 15px rgba(0, 255, 204, 0.8);
+    margin-bottom: 1rem;
+  }
+  
+  /* Subtitle styling */
+  .subtitle {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #f0f0f0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Flashcards container styling */
+  .flashcardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  /* Flashcard styling */
+  .flashcard {
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    width: 320px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .flashcard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 255, 255, 0.6);
+  }
+  
+  /* Flashcard content styling */
+  .flashcardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Question styling */
+  .question {
+    font-size: 1.5rem;
+    color: #00ffcc;
+    cursor: pointer;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+  }
+  
+  /* Answer styling */
+  .answer {
+    font-size: 1.125rem;
+    color: #e0e0e0;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Button styling */
+  .button, .generateButton, .contactButton {
+    background: #00ffcc;
+    color: #1e1e1e;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .button:hover, .generateButton:hover, .contactButton:hover {
+    background: #00bfae;
+    transform: scale(1.05);
+  }
+  
+  /* Special button styling */
+  .generateButton {
+    background: #ff6f00;
+    color: #1e1e1e;
+  }
+  
+  .generateButton:hover {
+    background: #e65100;
+  }
+  
+  .contactButton {
+    background: #00ffcc;
+    color: #1e1e1e;
+  }
+  
+  .contactButton:hover {
+    background: #00bfae;
+  }
+  
