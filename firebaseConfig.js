@@ -5,7 +5,7 @@ import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
-    apiKey: "gfgad443h_AIzaSyChBKirk2CFauviCCNRQMJM1IfdIaZQuQU",
+    apiKey: "",
     authDomain: "flashgenius-fd78d.firebaseapp.com",
     projectId: "flashgenius-fd78d",
     storageBucket: "flashgenius-fd78d.appspot.com",
