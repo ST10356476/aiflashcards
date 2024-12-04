@@ -1,5 +1,3 @@
-Here’s a tailored **README.md** file for your **AIFlashcards** repository:
-
 ```markdown
 # AIFlashcards
 
